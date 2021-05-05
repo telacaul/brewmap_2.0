@@ -1,0 +1,17 @@
+.images {
+    height: 50%;
+    width: 50%;
+}
+
+/* Styling for Buttons in the Modal Section */
+
+#localAddBtn {
+    font-size: xx-small;
+}
+
+#websiteBtn {
+    font-size: xx-small;
+    margin-left: 5px;
+}
+
+
