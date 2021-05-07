@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS brew_map;
+
+CREATE DATABASE brew_map;
