@@ -24,7 +24,7 @@ The BrewMap project uses two server-side APIs to allow the user to locate brewer
 ![BrewMap Favorites](./assets/images/brewmap-favorites.png)
 
 ## Launch
-Try out our application here: [BrewMap](https://telacaul.github.io/BrewMap/)
+Try out our application here: [BrewMap2.0](https://telacaul.github.io/brewmap_2.0/)
 
 ## About Us
 * [Tela Caul](https://telacaul.github.io/caul-professional-portfolio/)
