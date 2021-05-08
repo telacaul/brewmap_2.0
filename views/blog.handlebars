@@ -1,0 +1,40 @@
+<!--Main body with logo and text box for search entry-->
+<div class="hero-body">
+    <div class="container has-text-centered">
+        <div class="column is-full is-centered">
+            <h1 class="title">
+                BrewMap Blog
+            </h1>
+            <h2 class="subtitle">
+                Sharing about brews with your crew.
+            </h2>
+            <div class="section">
+                <div class="field is-grouped">
+                    <p class="control is-expanded">
+                        <input class="input is-large" type="text" 
+                        placeholder="Share your pub crawl experience!">
+                        <!--Changed placeholder to fit user input-->
+                    </p>
+                    <p class="control">
+                        <a class="button is-rounded is-large is-warning" id="searchBtn">
+                            Share
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Added scrip link below for bing maps-->
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous">
+</script>
+<script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap' async defer></script>
+<script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+<script async type="text/javascript" src="./assets/js/api.js"></script>
+</body>
+
+</html>
