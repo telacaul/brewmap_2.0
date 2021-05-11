@@ -1,0 +1,42 @@
+<section class="col-12 mb-2 bg-light text-dark p-3">
+    <h2 class="text-dark">Create New Posts</h2>
+
+    <form class="new-post-form">
+        <div>
+            <label for="post-title" class="text-dark">Title:</label>
+            <br>
+            <input type="text" id="post-title" name="post-title" class="input is-info is-large portfolio-languages text-dark" />
+    
+        </div>
+        <div>
+            <label for="post-body" class="text-dark">Content:</label>
+            <br>
+            <textarea type="text" id="post-body" name="post-body" class="textarea is-info is-large text-dark"></textarea>
+        </div>
+        <br>
+        <button type="submit" class="btn text-light" style="background-color: #3298db">Create</button>
+    </form>
+</section>
+
+{{#if post.length}}
+<section style="background-color: #3298db">
+    <h2 class="text-light">Your posts</h2>
+    <ol class="text-light">
+        {{#each post}}
+        <li>
+            <div class="col-11 row-md-8 mb-2 bg-light text-dark p-3 flex-column">
+                <h3 class="portfolio-item-title text-dark">{{title}}</h3>
+                <h5 class="portfolio-languages text-dark">{{body}}</h5>
+                <p class="text-dark">posted by {{user.username}} on {{format_date created_at}}</p>
+                <a class="text-dark" href="blog/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+                <br>
+                <a href="dashboard/edit/{{id}}" class="edit-link text-dark">Edit Post</a>
+            </div>
+        </li>
+        {{/each}}
+    </ol>
+</section>
+{{/if}}
+
+
+<script src="/javascript/add-post.js"></script>
