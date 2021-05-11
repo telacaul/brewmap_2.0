@@ -1,40 +1,24 @@
 <!--Main body with logo and text box for search entry-->
-<div class="hero-body">
+<div class="hero-body" style="background-color: #3298db">
     <div class="container has-text-centered">
         <div class="column is-full is-centered">
-            <h1 class="title">
+            <h1 class="title text-light">
                 BrewMap Blog
             </h1>
-            <h2 class="subtitle">
+            <h2 class="subtitle text-light">
                 Sharing about brews with your crew.
             </h2>
-            <div class="section">
-                <div class="field is-grouped">
-                    <p class="control is-expanded">
-                        <input class="input is-large" type="text" 
-                        placeholder="Share your pub crawl experience!">
-                        <!--Changed placeholder to fit user input-->
-                    </p>
-                    <p class="control">
-                        <a class="button is-rounded is-large is-warning" id="searchBtn">
-                            Share
-                        </a>
-                    </p>
+            <div class="posts">
+                {{#each posts}}
+                <div class="col-12 row-md-6 mb-2 bg-light text-light p-3 flex-column">
+                    <h3 class="portfolio-item-title text-dark">{{title}}</h3>
+                    <h5 class="portfolio-languages text-dark">{{body}}</h5>
+                    <p class="text-dark">posted by {{user.username}} on {{format_date created_at}}</p>
+                    <a class="text-dark" href="blog/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
                 </div>
+                {{/each}}
             </div>
         </div>
     </div>
 </div>
 
-<!--Added scrip link below for bing maps-->
-<script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous">
-</script>
-<script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap' async defer></script>
-<script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
-<script async type="text/javascript" src="./assets/js/api.js"></script>
-</body>
-
-</html>
