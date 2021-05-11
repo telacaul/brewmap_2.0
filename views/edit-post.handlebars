@@ -1,0 +1,36 @@
+<article class="col-12 mb-2 bg-light text-dark p-3">
+    <a href="/dashboard" class="text-dark">&larr; Back to dashboard</a>
+    <h4 class="text-dark">
+        Edit Post
+    </h4>
+    <form class="edit-post-form">
+        <div>
+            <input class="input is-large is-info" type="text" name="post-title" value="{{post.title}}" />
+            <br>
+            <textarea type="text" name="post-body" value="{{post.body}}" class="textarea is-info"></textarea>
+        </div>
+        <br>
+        <button type="submit" class="text-light" style="background-color: #3298db">Save post</button>
+        <button type="button" class="delete-post-btn text-light" style="background-color: #3298db">Delete post</button>
+    </form>
+</article>
+
+<form class="comment-form col-12 col-md-12 mb-2 text-light p-3 flex-column" style="background-color: #3298db">
+    <div>
+        <h4 class="text-light">Add Comment</h4>
+        <textarea name="comment-body" class="input is-large"></textarea>
+    </div>
+    <br>
+    <div>
+        <button type="submit">Add Comment</button>
+    </div>
+</form>
+
+<div class="col-12 col-md-12 mb-2 text-light p-3 flex-column" style="background-color: #3298db">
+    {{> comments post.comments}}
+</div>
+
+
+<script src="/javascript/comment.js"></script>
+<script src="/javascript/delete-post.js"></script>
+<script src="/javascript/edit-post.js"></script>
