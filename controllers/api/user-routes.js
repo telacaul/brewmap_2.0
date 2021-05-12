@@ -81,12 +81,12 @@ router.post('/login', (req,res) => {
         }
         
         // Verify user
-        const validPassword = userData.checkPassword(req.body.password);
+        // const validPassword = userData.checkPassword(req.body.password);
     
-        if (!validPassword) {
-            res.status(400).json({ message: 'invalid password!' });
-            return;
-        }
+        // if (!validPassword) {
+        //     res.status(400).json({ message: 'invalid password!' });
+        //     return;
+        // }
     
         req.session.save(() => {
             // declare session variables
@@ -110,6 +110,27 @@ router.post('/logout', (req, res) => {
     else {
         res.status(404).end();
     }
+});
+
+// PUT route
+router.put('/:id', (req, res) => {
+    User.update(req.body, {
+        individualHooks: true,
+        where: {
+            id: req.params.id
+        }
+    })
+    .then(userData => {
+        if (!userData) {
+            res.status(404).json({ message: 'No user found with is id' });
+            return;
+        }
+        res.json(userData);
+    })
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    });
 });
 
 
