@@ -1,25 +1,44 @@
-<div class="field text-light p-3" style="background-color: #3298db">
-    <h2 class="text-center">Sign in and see whats brewing!</h2>
-    <h3 class="portfolio-item-title text-light">Login</h3>
-    <form class="login-form">
-        <div>
-            <label class="label text-light" for="username-login">Username:</label>
-            <input class="portfolio-languages text-dark input is-warning is-rounded" type="text" id="username-login" />
+<section class="hero is-info is-fullheight">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-5-tablet is-4-desktop is-3-widescreen">
+                    <img src="/images/cheers.png" alt="Logo">
+                    <form class="box login-form">
+                        <div class="field">
+                            <h3 class="text-center">Sign in!</h3>
+                            <label for="username-login" class="label">Username</label>
+                            <div class="control has-icons-left">
+                                <input type="text" placeholder="e.g. Enter username" class="input" id="username-login">
+                                <span class="icon is-small is-left">
+                                    <i class="fa fa-envelope"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label for="password-login" class="label">Password</label>
+                            <div class="control has-icons-left">
+                                <input type="password" placeholder="*******" class="input" id="password-login">
+                                <span class="icon is-small is-left">
+                                    <i class="fa fa-lock"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <button type="sumbit" class="button is-success">
+                                Login
+                            </button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
         </div>
-        <div>
-            <label for="password-login">Password:</label>
-            <br>
-            <input class="portfolio-languages text-dark input is-warning is-rounded" type="password"
-                id="password-login" />
-        </div>
-        <br>
-        <div class="field">
-            <p class="control">
-                <button type="submit">Login</button>
-            </p>
-        </div>
-    </form>
-</div>
+    </div>
+</section>
+
+
+
 <div class="field bg-dark text-light p-3">
     <h3 class="portfolio-item-title text-light">Sign-Up</h3>
     <form class="signup-form">
