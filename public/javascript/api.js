@@ -42,21 +42,21 @@ function findBrewery(city) {
 
             // get Brew Name
             var nameData = data[i].name;
-            var names = document.createElement("p");
+            var names = document.createElement("h4");
 
-            names.innerHTML = "* " + nameData;
+            names.innerHTML = nameData;
             labelsEl[i].append(names);
 
             // get Brew Type
             var type = data[i].brewery_type;
-            var brewType = document.createElement("h2");
+            var brewType = document.createElement("p");
 
             brewType.innerHTML = "Type: " + type;
             labelsEl[i].append(brewType);
 
             //get Address
             var address = data[i].street;
-            var brewAddy = document.createElement("h2");
+            var brewAddy = document.createElement("p");
 
             brewAddy.innerHTML = "address: " + address;
             labelsEl[i].append(brewAddy);

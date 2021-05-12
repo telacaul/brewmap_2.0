@@ -1,128 +1,145 @@
-<div class="columns around is-fullheight">
-    <article class="column is-2">
-        <div class="card is-fullheight">
-            <div class="card-image">
-                <figure class="image is-3by4">
-                    <img src="/images/Tela.jpg" alt="Placeholder image">
-                </figure>
-            </div>
-            <div class="card-content">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-                <div class="media">
-                    <div class="media-content">
-                        <p class="title is-4">Tela Caul</p>
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 500px;
+            perspective: 1000px;
+        }
 
-                    </div>
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-color: #2980b9;
+            color: black;
+        }
+
+        .flip-card-back {
+            background-color: lightslategrey;
+            color: white;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <h1 class="text-light text-center">Meet the Team!</h1>
+    <br>
+    <div class="columns">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="/images/Tela.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    <p class="title text-light">Tela</p>
+                    <p class="subtitle text-light">HighSchool Teacher</p>
+                    <p class="subtitle text-light">Content Lead</p>
                 </div>
-
-                <div class="content">
-                    HIGH SCHOOL SCIENCE TEACHER & CONTENT LEAD. Passionate about digital tools to redefine education.
-
-                    <a></a>.
-                    <a href="#"></a> <a href="https://telacaul.github.io/caul-professional-portfolio/">Tela
-                        Caul-Professional Portfolio</a>
+                <div class="flip-card-back">
+                    <h1>Tela Caul</h1>
+                    <p>Place Holder</p>
+                    <p>Place Holder</p>
                     <br>
-
+                    <a href="#"><i class="text-light fa fa-dribbble"></i></a>
+                    <a href="#"><i class="text-light fa fa-twitter"></i></a>
+                    <a href="#"><i class="text-light fa fa-linkedin"></i></a>
+                    <a href="#"><i class="text-light fa fa-facebook"></i></a>
+                    <p><button>Contact</button></p>
                 </div>
             </div>
         </div>
-    </article>
-    <article class="column is-2">
-        <div class="card is-fullheight">
-            <div class="card-image">
-                <figure class="image is-3by4">
-                    <img src="/images/Ian.png" alt="Placeholder image">
-                </figure>
-            </div>
-            <div class="card-content">
-                <div class="media">
-                    <div class="media-center">
-
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-4">Ian Osborne</p>
-
-                    </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="/images/Felicia harris Foster.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    <p class="title text-light">Felicia</p>
+                    <p class="subtitle text-light">Instructional Designer</p>
+                    <p class="subtitle text-light">Education Consultant</p>
                 </div>
-
-                <div class="content">
-                    Ian likes golf, SF sports, and pastrami sandwiches. He is an expert coder.
-                    <a></a>
-                    <a href="https://riosborne6.github.io/Portfolio/">Ian's Professional Portfolio</a>
+                <div class="flip-card-back">
+                    <h1>Felicia Harris-Foster</h1>
+                    <p>Place Holder</p>
+                    <p>Place Holder</p>
                     <br>
-                </div>
-            </div>
-    </article>
-
-    <article class="column is-2">
-        <div class="card is-fullheight">
-
-            <div class="card-image">
-                <figure class="image is-3by4">
-                    <img src="/images/Felicia Harris Foster.jpg" alt="Placeholder image">
-                </figure>
-            </div>
-            <div class="card-content">
-                <div class="media">
-                    <div class="media-center">
-
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-4">Felicia Harris-Foster</p>
-
-                    </div>
-                </div>
-
-                <div class="content">
-                    Instructional Designer/Education Consultant.Lifelong learner and passion for developing elearning
-                    courses.
-
-                    <a></a>
-                    <a href="#"></a> <a href="https://harrisfd.github.io/portfolio-page/">Felicia Harris-Foster's
-                        Professional Portfolio</a>
-
-                </div>
-            </div>
-    </article>
-    <article class="column is-2">
-        <div class="card is-fullheight">
-            <div class="card-image">
-                <figure class="image is-3by4">
-                    <img src="/images/Rich.jpg" alt="Placeholder image">
-                </figure>
-            </div>
-            <div class="card-content">
-                <div class="media">
-                    <div class="media-right">
-
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-4">Rich Brian</p>
-
-                    </div>
-                </div>
-
-                <div class="content">
-                    <h4>Favorite Beer:</h4>
-                    <h5>Corona Familiar</h5>
-                    Enjoy learning and very passionate about technology. Love to eat good food and travel.
-                    <br>
-                    <a></a>
-                    <a href="#"></a> <a href="https://rbsantos-code.github.io/all-about-me/">Rich Brian's Professional
-                        Portfolio</a>
-                    <br>
-
-                    <body>
-                        <p id="demo"></p>
-
-                        <!-- <script>
-                            var d = new Date();
-                            document.getElementById("demo").innerHTML = d;
-                        </script> -->
-
-                    </body>
+                    <a href="#"><i class="text-light fa fa-dribbble"></i></a>
+                    <a href="#"><i class="text-light fa fa-twitter"></i></a>
+                    <a href="#"><i class="text-light fa fa-linkedin"></i></a>
+                    <a href="#"><i class="text-light fa fa-facebook"></i></a>
+                    <p><button>Contact</button></p>
                 </div>
             </div>
         </div>
-    </article>
-</div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="/images/Rich.jpg" alt="Avatar" style="width:300px;height:300px;"><p class="title text-light">Richard</p>
+                    <p class="subtitle text-light">Technician</p>
+                    <p class="subtitle text-light">Student</p>
+                </div>
+                <div class="flip-card-back">
+                    <h1>Richard Brian Santos</h1>
+                    <p>Loves to Vacation</p>
+                    <p>A Real Foodie</p>
+                    <br>
+                    <a href="#"><i class="text-light fa fa-dribbble"></i></a>
+                    <a href="#"><i class="text-light fa fa-twitter"></i></a>
+                    <a href="#"><i class="text-light fa fa-linkedin"></i></a>
+                    <a href="#"><i class="text-light fa fa-facebook"></i></a>
+                    <p><button>Contact</button></p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="/images/Ian.png" alt="Avatar" style="width:300px;height:300px;">
+                    <p class="title text-light">Ian</p>
+                    <p class="subtitle text-light">Placeholder</p>
+                    <p class="subtitle text-light">Placeholder</p>
+                </div>
+                <div class="flip-card-back">
+                    <h1>Ian Osborne</h1>
+                    <p>He is an expert coder</p>
+                    <p>Likes Golf, SF Sports, Pastrami Sandwiches</p>
+                    <br>
+                    <a href="#"><i class="text-light fa fa-dribbble"></i></a>
+                    <a href="#"><i class="text-light fa fa-twitter"></i></a>
+                    <a href="#"><i class="text-light fa fa-linkedin"></i></a>
+                    <a href="#"><i class="text-light fa fa-facebook"></i></a>
+                    <p><button>Contact</button></p>
+                </div>
+            </div>
+            {{!-- <h2 class="text-center">Ian</h2>
+            <h4 class="text-center">Place Holder</h4>
+            <h4 class="text-center">Place Holder</h4> --}}
+        </div>
+    </div>
+
+</body>

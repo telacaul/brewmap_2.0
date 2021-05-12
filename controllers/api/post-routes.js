@@ -31,7 +31,7 @@ router.get('/', (req, res) => {
 
 
 // create posts
-router.post('/', withAuth, (req, res) => {
+router.post('/', withAuth, (req, res) => { // remove withAuth for time being
     Post.create({
         title: req.body.title,
         body: req.body.body,
@@ -46,7 +46,7 @@ router.post('/', withAuth, (req, res) => {
 
 
 // updatee post
-router.put('/:id', withAuth, (req, res) => {
+router.put('/:id', withAuth, (req, res) => { // remove withAuth for time being
     Post.update(
         {
             title: req.body.title,
@@ -73,7 +73,7 @@ router.put('/:id', withAuth, (req, res) => {
 
 
 // delete post
-router.delete('/:id', withAuth, (req, res) => {
+router.delete('/:id', withAuth, (req, res) => { // remove withAuth for time being
     Post.destroy({
         where: {
             id: req.params.id
