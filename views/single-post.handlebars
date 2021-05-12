@@ -1,11 +1,11 @@
 <div class="box" style="background-color: #3298db">
     <h3 class="text-light">Brew Post</h3>
-    <div class="col-12 col-md-12 mb-5 bg-dark text-light p-3 flex-column">
-        <h3 class="portfolio-item-title text-light">{{post.title}}</h3>
-        <h5 class="portfolio-languages">{{post.body}}</h5>
-        <p>posted by {{user.username}} on {{format_date post.created_at}}</p>
+    <div class="col-12 col-md-12 mb-5 notification is-link is-light text-light p-3 flex-column">
+        <h3 class="portfolio-item-title text-dark">{{post.title}}</h3>
+        <h5 class="portfolio-languages text-dark">{{post.body}}</h5>
+        <p class="text-dark">posted by {{user.username}} on {{format_date post.created_at}}</p>
         {{#if loggedIn}}
-        <hr>
+        <hr class="text-dark">
         <form class="comment-form">
             <div>
                 <textarea class="textarea" name="comment-body"></textarea>
@@ -20,7 +20,7 @@
     <hr class="text-light">
     <h3 class="text-light">Comments</h3>
     {{#if post.comments}}
-    <div class="col-12 col-md-12 mb-5 bg-dark text-light p-3 flex-column">
+    <div class="col-12 col-md-12 mb-5 notification is-link is-light text-dark p-3 flex-column">
         {{> comments post.comments}}
     </div>
     {{/if}}
