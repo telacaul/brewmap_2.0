@@ -3,7 +3,7 @@ const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
 
-router.get('/', (req,res) => { // removed withAuth for time being
+router.get('/', withAuth, (req,res) => { // removed withAuth for time being
     Post.findAll({
         where: {
             user_id: req.session.user_id
@@ -44,7 +44,7 @@ router.get('/', (req,res) => { // removed withAuth for time being
 });
 
 
-router.get('/edit/:id', (req, res) => { // remove withAuth for time being
+router.get('/edit/:id', withAuth, (req, res) => { // remove withAuth for time being
     Post.findOne({
         where: {
             id: req.params.id

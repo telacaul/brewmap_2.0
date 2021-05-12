@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
 
 
 // create comment
-router.post('/', (req, res) => { // removed withAuth for time being
+router.post('/', withAuth, (req, res) => { // removed withAuth for time being
     Comment.create({
         comment_text: req.body.comment_text,
         // use the id from the session
