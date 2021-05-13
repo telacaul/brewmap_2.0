@@ -1,0 +1,145 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 500px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-color: #2980b9;
+            color: black;
+        }
+
+        .flip-card-back {
+            background-color: lightslategrey;
+            color: white;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <h1 class="text-light text-center">Meet the Team!</h1>
+    <br>
+    <div class="columns">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="/images/Tela.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    <p class="title text-light">Tela</p>
+                    <p class="subtitle text-light">HighSchool Teacher</p>
+                    <p class="subtitle text-light">Content Lead</p>
+                </div>
+                <div class="flip-card-back">
+                    <h1>Tela Caul</h1>
+                    <p>Place Holder</p>
+                    <p>Place Holder</p>
+                    <br>
+                    <a href="#"><i class="text-light fa fa-dribbble"></i></a>
+                    <a href="#"><i class="text-light fa fa-twitter"></i></a>
+                    <a href="#"><i class="text-light fa fa-linkedin"></i></a>
+                    <a href="#"><i class="text-light fa fa-facebook"></i></a>
+                    <p><button>Contact</button></p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="/images/Felicia harris Foster.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    <p class="title text-light">Felicia</p>
+                    <p class="subtitle text-light">Instructional Designer</p>
+                    <p class="subtitle text-light">Education Consultant</p>
+                </div>
+                <div class="flip-card-back">
+                    <h1>Felicia Harris-Foster</h1>
+                    <p>Place Holder</p>
+                    <p>Place Holder</p>
+                    <br>
+                    <a href="#"><i class="text-light fa fa-dribbble"></i></a>
+                    <a href="#"><i class="text-light fa fa-twitter"></i></a>
+                    <a href="#"><i class="text-light fa fa-linkedin"></i></a>
+                    <a href="#"><i class="text-light fa fa-facebook"></i></a>
+                    <p><button>Contact</button></p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="/images/Rich.jpg" alt="Avatar" style="width:300px;height:300px;"><p class="title text-light">Richard</p>
+                    <p class="subtitle text-light">Technician</p>
+                    <p class="subtitle text-light">Student</p>
+                </div>
+                <div class="flip-card-back">
+                    <h1>Richard Brian Santos</h1>
+                    <p>Loves to Vacation</p>
+                    <p>A Real Foodie</p>
+                    <br>
+                    <a href="#"><i class="text-light fa fa-dribbble"></i></a>
+                    <a href="#"><i class="text-light fa fa-twitter"></i></a>
+                    <a href="#"><i class="text-light fa fa-linkedin"></i></a>
+                    <a href="#"><i class="text-light fa fa-facebook"></i></a>
+                    <p><button>Contact</button></p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="/images/Ian.png" alt="Avatar" style="width:300px;height:300px;">
+                    <p class="title text-light">Ian</p>
+                    <p class="subtitle text-light">Placeholder</p>
+                    <p class="subtitle text-light">Placeholder</p>
+                </div>
+                <div class="flip-card-back">
+                    <h1>Ian Osborne</h1>
+                    <p>He is an expert coder</p>
+                    <p>Likes Golf, SF Sports, Pastrami Sandwiches</p>
+                    <br>
+                    <a href="#"><i class="text-light fa fa-dribbble"></i></a>
+                    <a href="#"><i class="text-light fa fa-twitter"></i></a>
+                    <a href="#"><i class="text-light fa fa-linkedin"></i></a>
+                    <a href="#"><i class="text-light fa fa-facebook"></i></a>
+                    <p><button>Contact</button></p>
+                </div>
+            </div>
+            {{!-- <h2 class="text-center">Ian</h2>
+            <h4 class="text-center">Place Holder</h4>
+            <h4 class="text-center">Place Holder</h4> --}}
+        </div>
+    </div>
+
+</body>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BrewMap</title>
+    <!-- <link rel="shortcut icon" href="./images/fav_icon.png" type="image/x-icon"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <!-- Bulma Version 0.9.0-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--Top NAV SECTION-->
+    <section class="hero is-info">
+        <div class="hero-head">
+            <!--nav bar-->
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="/">
+                            <h2>BrewMap</h2>
+                            <img src="/images/cheers.png" alt="Logo">
+                        </a>
+                        <span class="navbar-burger burger" data-target="navbarMenu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <!--navigation buttons-->
+                    <div id="navbarMenu" class="navbar-menu">
+                        <div class="navbar-end">
+                            {{!-- <span class="navbar-item">
+                                <a class="button is-white is-outlined" href="/login">
+                                    <span class="icon">
+                                        <i class="fa fa-home"></i>
+                                    </span>
+                                    <span>Login</span>
+                                </a>
+                            </span> --}}
+                            <span class="navbar-item">
+                                <a class="button is-white is-outlined" href="/favorites">
+                                    <span class="icon">
+                                        <i class="fa fa-heart"></i>
+                                    </span>
+                                    <span>Favorites</span>
+                                </a>
+                            </span>
+                            <span class="navbar-item">
+                                <a class="button is-white is-outlined" href="/aboutus">
+                                    <span class="icon">
+                                        <i class="fa fa-book"></i>
+                                    </span>
+                                    <span>About Us</span>
+                                </a>
+                            </span>
+                            <span class="navbar-item">
+                                <a class="button is-white is-outlined" href="/dashboard">
+                                    <span class="icon">
+                                        <i class="fa fa-book"></i>
+                                    </span>
+                                    <span>Dashboard</span>
+                                </a>
+                            </span>
+                            <span class="navbar-item">
+                                <a class="button is-white is-outlined" href="/blog">
+                                    <span class="icon">
+                                        <i class="fa fa-flag"></i>
+                                    </span>
+                                    <span>Blog</span>
+                                </a>
+                            </span>
+                            <span class="navbar-item has-dropdown is-hoverable">
+                                <a class="button is-white is-outlined" href="/login">
+                                    <span>login</span>
+                                </a>
+                                <div class="navbar-dropdown">
+                                    <a class="button is-white -isoutlined text-dark" id="logout">logout</a>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <main style="background-color: #3298db"> 
+        {{{ body }}}
+    </main>
+
+    <script src="/javascript/logout.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!--Main body with logo and text box for search entry-->
+<div class="hero-body" style="background-color: #3298db">
+    <div class="container has-text-centered">
+        <div class="column is-full is-centered">
+            <h1 class="title text-light">
+                BrewMap Blog
+            </h1>
+            <h2 class="subtitle text-light">
+                Sharing about brews with your crew.
+            </h2>
+            <div class="posts">
+                {{#each posts}}
+                <div class="col-12 row-md-6 mb-2 bg-light text-light p-3 flex-column">
+                    <h3 class="portfolio-item-title text-dark">{{title}}</h3>
+                    <h5 class="portfolio-languages text-dark">{{body}}</h5>
+                    <p class="text-dark">posted by {{user.username}} on {{format_date created_at}}</p>
+                    <a class="text-dark" href="blog/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>
+
