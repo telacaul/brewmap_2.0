@@ -108,7 +108,8 @@ body {
   -webkit-animation: flip-2-hor-top-fwd 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
           animation: flip-2-hor-top-fwd 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
 }
-.card-object.flip-in.card-2 {
+.card-object.flip-in.card-2,
+.card-object.flip-in.card-4{
   -webkit-animation: flip-2-hor-bottom-fwd 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
           animation: flip-2-hor-bottom-fwd 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
 }
@@ -181,11 +182,12 @@ body {
   transition: transform 0.28s ease;
 }
 .face.front .title-wrapper .title {
+  color:#fff;
   position: relative;
   font-family: 'Archivo Black', sans-serif;
   width: 100%;
   text-transform: uppercase;
-  font-size: 2vw;
+  font-size: 1.5vw;
   line-height: 1;
   opacity: 0.8;
   transition: opacity 0.2s ease;
@@ -202,11 +204,12 @@ body {
   transition: transform 0.15s;
 }
 .face.front .title-wrapper .subtitle {
+  color:#fff;
   font-size: 0.9vw;
   line-height: 1;
   letter-spacing: 1px;
   text-transform: uppercase;
-  opacity: 0;
+  opacity:1;
   transition: opacity 0.15s;
 }
 .face.front:hover::before {

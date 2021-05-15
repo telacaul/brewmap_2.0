@@ -1,145 +1,232 @@
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
+<!--Main Content Section-->
+<div class="hero-body">
+  <div class="container has-text-centered">
+    <!-- Team Card Section -->
+    <div id="video-box">
+      <iframe height="300" id="video" src="https://www.youtube.com/embed/qbP2XCGyWRY" frameborder="0"
+        allow="autoplay; encrypted-media" allowfullscreen>
+      </iframe>
+    </div>
+    <div id="image-group">
+      <img src="https://www.dropbox.com/s/z59bms55wbkfdo7/barrels.jpg?raw=1" alt="">
 
-        .flip-card {
-            background-color: transparent;
-            width: 300px;
-            height: 500px;
-            perspective: 1000px;
-        }
+      <img src="https://www.dropbox.com/s/hqlfizn8yc5xaa0/beer-taps.jpg?raw=1" alt="">
 
-        .flip-card-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            transition: transform 0.6s;
-            transform-style: preserve-3d;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        }
+      <img src="https://www.dropbox.com/s/btdy2jmlnfsbgrq/bar.jpg?raw=1" alt="">
 
-        .flip-card:hover .flip-card-inner {
-            transform: rotateY(180deg);
-        }
-
-        .flip-card-front,
-        .flip-card-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-        }
-
-        .flip-card-front {
-            background-color: #2980b9;
-            color: black;
-        }
-
-        .flip-card-back {
-            background-color: lightslategrey;
-            color: white;
-            transform: rotateY(180deg);
-        }
-    </style>
-</head>
-
-
-<body>
-
-    <h1 class="text-light text-center">Meet the Team!</h1>
-    <br>
-    <div class="columns">
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="/images/Tela.jpg" alt="Avatar" style="width:300px;height:300px;">
-                    <p class="title text-light">Tela</p>
-                    <p class="subtitle text-light">HighSchool Teacher</p>
-                    <p class="subtitle text-light">Content Lead</p>
-                </div>
-                <div class="flip-card-back">
-                    <h1>Tela Caul</h1>
-                    <p>Place Holder</p>
-                    <p>Place Holder</p>
-                    <br>
-                    <a href="#"><i class="text-light fa fa-dribbble"></i></a>
-                    <a href="#"><i class="text-light fa fa-twitter"></i></a>
-                    <a href="#"><i class="text-light fa fa-linkedin"></i></a>
-                    <a href="#"><i class="text-light fa fa-facebook"></i></a>
-                    <p><button>Contact</button></p>
-                </div>
-            </div>
-        </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="/images/Felicia harris Foster.jpg" alt="Avatar" style="width:300px;height:300px;">
-                    <p class="title text-light">Felicia</p>
-                    <p class="subtitle text-light">Instructional Designer</p>
-                    <p class="subtitle text-light">Education Consultant</p>
-                </div>
-                <div class="flip-card-back">
-                    <h1>Felicia Harris-Foster</h1>
-                    <p>Place Holder</p>
-                    <p>Place Holder</p>
-                    <br>
-                    <a href="#"><i class="text-light fa fa-dribbble"></i></a>
-                    <a href="#"><i class="text-light fa fa-twitter"></i></a>
-                    <a href="#"><i class="text-light fa fa-linkedin"></i></a>
-                    <a href="#"><i class="text-light fa fa-facebook"></i></a>
-                    <p><button>Contact</button></p>
-                </div>
-            </div>
-        </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="/images/Rich.jpg" alt="Avatar" style="width:300px;height:300px;"><p class="title text-light">Richard</p>
-                    <p class="subtitle text-light">Technician</p>
-                    <p class="subtitle text-light">Student</p>
-                </div>
-                <div class="flip-card-back">
-                    <h1>Richard Brian Santos</h1>
-                    <p>Loves to Vacation</p>
-                    <p>A Real Foodie</p>
-                    <br>
-                    <a href="#"><i class="text-light fa fa-dribbble"></i></a>
-                    <a href="#"><i class="text-light fa fa-twitter"></i></a>
-                    <a href="#"><i class="text-light fa fa-linkedin"></i></a>
-                    <a href="#"><i class="text-light fa fa-facebook"></i></a>
-                    <p><button>Contact</button></p>
-                </div>
-            </div>
-        </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="/images/Ian.png" alt="Avatar" style="width:300px;height:300px;">
-                    <p class="title text-light">Ian</p>
-                    <p class="subtitle text-light">Placeholder</p>
-                    <p class="subtitle text-light">Placeholder</p>
-                </div>
-                <div class="flip-card-back">
-                    <h1>Ian Osborne</h1>
-                    <p>He is an expert coder</p>
-                    <p>Likes Golf, SF Sports, Pastrami Sandwiches</p>
-                    <br>
-                    <a href="#"><i class="text-light fa fa-dribbble"></i></a>
-                    <a href="#"><i class="text-light fa fa-twitter"></i></a>
-                    <a href="#"><i class="text-light fa fa-linkedin"></i></a>
-                    <a href="#"><i class="text-light fa fa-facebook"></i></a>
-                    <p><button>Contact</button></p>
-                </div>
-            </div>
-            {{!-- <h2 class="text-center">Ian</h2>
-            <h4 class="text-center">Place Holder</h4>
-            <h4 class="text-center">Place Holder</h4> --}}
-        </div>
     </div>
 
-</body>
+
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<!--Added Elements to show Modal and Data from APIs-->
+<!--Modal Section-->
+<div class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">BrewMap</p>
+      <button class="delete" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <div class="columns">
+        <!--Brewery Data Section-->
+        <div class="column is-half">
+          <label class="label" id="brewery"></label>
+          <label class="label" id="brewery"></label>
+          <label class="label" id="brewery"></label>
+          <label class="label" id="brewery"></label>
+          <label class="label" id="brewery"></label>
+        </div>
+        <!--Map Section-->
+        <div class="column auto">
+          <div class="map"></div>
+        </div>
+      </div>
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button is-success" id="close">Close</button>
+
+    </footer>
+  </div>
+</div>
+</section>
+
+<div class="card-wrapper">
+  <div class="card-1 card-object card-object-hf" style="background:#222 url(./assets/images/Ian.png) 90% 35%">
+    <div class="face front">
+      <div class="title-wrapper">
+        <div class="title">Ian</div>
+        <div class="subtitle">The Expert Coder</div>
+      </div>
+    </div>
+    <div class="face back">
+      <div class="img-wrapper">
+        <div class="avatar"></div>
+      </div>
+      <div class="info-wrapper">
+        <div class="info-title">Ian</div>
+
+        <ul class="info-content">
+          <li class="info-content-item">Ian likes golf, SF sports, and pastrami sandwiches. He is an expert coder.</li>
+
+
+        </ul>
+
+        <a class="info-content" href="https://riosborne6.github.io/Portfolio/">Ian's Professional Portfolio</a>
+        <a class="info-content" href="mailto:riosborne6@gmail.com">Send Email</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="card-wrapper">
+  <div class="card-2 card-object card-object-hf" style="background:#222 url(./assets/images/Tela.jpg) 90% 35%">
+    <div class="face front">
+      <div class="title-wrapper">
+        <div class="title">Tela</div>
+        <div class="subtitle">The Expert Coder</div>
+      </div>
+    </div>
+    <div class="face back">
+      <div class="img-wrapper">
+        <div class="avatar"></div>
+      </div>
+      <div class="info-wrapper">
+        <div class="info-title">Tela</div>
+
+        <ul class="info-content">
+          <li class="info-content-item">HIGH SCHOOL SCIENCE TEACHER & CONTENT LEAD. Passionate about digital tools to
+            redefine education.</li>
+
+
+        </ul>
+
+        <a class="info-content" href="https://telacaul.github.io/caul-professional-portfolio/">Tela Caul-Professional
+          Portfolio</a>
+        <a class="info-content" href="mailto:telacaul@gmail.com">Send Email</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="card-wrapper">
+  <div class="card-3 card-object card-object-hf" style="background:#222 url(./assets/images/Rich.jpg) 90% 35%">
+    <div class="face front">
+      <div class="title-wrapper">
+        <div class="title">Rich</div>
+        <div class="subtitle">The Expert Coder</div>
+      </div>
+    </div>
+    <div class="face back">
+      <div class="img-wrapper">
+        <div class="avatar"></div>
+      </div>
+      <div class="info-wrapper">
+        <div class="info-title">Rich</div>
+
+        <ul class="info-content">
+          <li class="info-content-item">Enjoy learning and very passionate about technology. Love to eat good food and
+            travel.</li>
+
+
+        </ul>
+
+        <a class="info-content" href="https://rbsantos-code.github.io/all-about-me/">Rich Brian's Professional
+          Portfolio</a>
+        <a class="info-content" href="mailto:richardbriansantos91@yahoo.com">Send Email</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card-wrapper">
+  <div class="card-4 card-object card-object-hf"
+    style="background:#222 url(./assets/images/Felicia\ Harris\ Foster.jpg) 90% 35%">
+    <div class="face front">
+      <div class="title-wrapper">
+        <div class="title">Felicia</div>
+        <div class="subtitle">The Professor</div>
+      </div>
+    </div>
+    <div class="face back">
+      <div class="img-wrapper">
+        <div class="avatar"></div>
+      </div>
+      <div class="info-wrapper">
+        <div class="info-title">Felicia</div>
+
+        <ul class="info-content">
+          <li class="info-content-item">Instructional Designer/Education Consultant.Lifelong learner and passion for
+            developing elearning
+            courses.</li>
+
+
+        </ul>
+
+        <a class="info-content" href="https://harrisfd.github.io/portfolio-page/">Felicia Harris-Foster's
+          Professional Portfolio</a>
+        <a class="info-content" href="mailto:fharrisfoster@gmail.com">Send Email</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    var $cards = $('.card-object'),
+      $faceButtons = $('.face');
+
+    $faceButtons.on('click', flipCard);
+
+    function flipCard(event) {
+      event.preventDefault();
+
+      var $btnFace = $(this),
+        $card = $btnFace.parent('.card-object');
+
+      if ($card.hasClass('flip-in')) {
+        closeCards();
+      } else {
+        closeCards();
+        openCard($card);
+      }
+
+    }
+
+    function closeCards() {
+      $cards.each(function () {
+        $(this)
+          .filter('.flip-in')
+          .removeClass('flip-in')
+          .queue(function () {
+            // Force reflow hack
+            var reflow = this.offsetHeight;
+            $(this)
+              .addClass('flip-out')
+              .dequeue();
+          })
+
+      });
+    }
+
+    function openCard($card) {
+      $card
+        .removeClass('flip-out')
+        .queue(function () {
+          // Force reflow hack
+          var reflow = this.offsetHeight;
+          $(this)
+            .addClass('flip-in')
+            .dequeue();
+        });
+
+    }
+    $("a").click(function (e) {
+      e.stopPropagation();
+    });
+  </script>
