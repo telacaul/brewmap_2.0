@@ -75,6 +75,7 @@ function findBrewery(city) {
 
             //get Website
             var website = data[i].website_url;
+            console.log(data[i].website_url);
             var webAddress = document.createElement("a");
             webAddress.classList.add("button", "is-info");
             webAddress.setAttribute("id", "websiteBtn");
@@ -101,10 +102,11 @@ function findBrewery(city) {
             // Adding Add Button Even and Local Storage
             
             localAdd.dataset.barName = barName;
+            localAdd.dataset.href = website; 
 
             localAdd.addEventListener("click", function() {
 
-                var namesValue = [this.dataset.barName];
+                var namesValue = {name: this.dataset.barName, "href": this.dataset.href};
                 console.log("namesValue", namesValue);
 
                 var namesArray = JSON.parse(localStorage.getItem("brew-name")) || [];
