@@ -16,7 +16,8 @@ function ShowBrew() {
     favSectionEl.innerHTML = "";
     for (var i = 0; i < favorites.length; i++) {
         var favBrew = document.createElement("h3");
-        favBrew.innerHTML = `<a href=${favorites[i].href}/>${favorites[i].name}</a>`;
+        favBrew.innerHTML = `<a href=${favorites[i].href}/>${favorites[i].name}</a><a href="/dashboard"><button>comment</button></a>`;
+
         favSectionEl.append(favBrew);
     }
 }
