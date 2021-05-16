@@ -8,23 +8,32 @@ BrewMap is here to help!
 ### Front-End Development
 The BrewMap project uses two server-side APIs to allow the user to locate breweries in a given city. The user is given an option to view the brewery website and/or add the brewery to favorites. The favorites tab uses client-side storage to list breweries added, persisting upon refresh. Users can clear their favorites at any time. 
 
+## Back-End Development
+The new, improved and Heroku deployed BrewMap webpage includes a user login that encrypts user passwords for privacy. Once logged in, the user can access their Dashboard, allowing them to post and comment on the BrewMap community blog. 
+
 ## Technologies Used
 * HTML
 * CSS 
-* CSS Framework[(Bulma)](https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/landing.html)
+* Bulma CSS Framework[(Bulma)](https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/landing.html)
+* MDBootstrap
 * JavaScript
 * Client-side local storage
 * Server-side APIs (Open Brewery and Bing Maps)
 * Modals
-* Zoom and Google Slides (for remote collaboration and presentations)
+* Node.js
+* Express.js
+* RESTful API
+* Handlebars.js
+* MySQL and Sequelize ORM
+* Heroku
 
 ## Screenshots
-![BrewMap Home](./assets/images/brewmap-home.png)
-![BrewMap Functionality](./assets/images/brewmap-functionality.png)
-![BrewMap Favorites](./assets/images/brewmap-favorites.png)
+![BrewMap Home](./public/images/home.jpg)
+![BrewMap Login](./public/images/login.jpg)
+![BrewMap Blog](./public/images/blog.jpg)
 
 ## Launch
-Try out our application here: [BrewMap2.0](https://telacaul.github.io/brewmap_2.0/)
+Try out our application here: [BrewMap2.0](https://salty-thicket-97397.herokuapp.com/)
 
 ## About Us
 * [Tela Caul](https://telacaul.github.io/caul-professional-portfolio/)
