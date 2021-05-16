@@ -8,7 +8,7 @@ BrewMap is here to help!
 ### Front-End Development
 The BrewMap project uses two server-side APIs to allow the user to locate breweries in a given city. The user is given an option to view the brewery website and/or add the brewery to favorites. The favorites tab uses client-side storage to list breweries added, persisting upon refresh. Users can clear their favorites at any time. 
 
-## Back-End Development
+### Back-End Development
 The new, improved and Heroku deployed BrewMap webpage includes a user login that encrypts user passwords for privacy. Once logged in, the user can access their Dashboard, allowing them to post and comment on the BrewMap community blog. 
 
 ## Technologies Used
